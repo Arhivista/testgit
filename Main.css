@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: Helvetica, sans-serif, serif;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: red; 
+    background-image: linear-gradient(to bottom right, white, yellowgreen);
+}
+#sitting-order{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+#sitting-order td{
+    padding: 50px 30px 50px 30px;
+     text-align: center;
+     border: 1px solid #aaa
+}
+#sitting-order tbody tr:nth-child(even) td:nth-child(even), 
+#sitting-order tbody tr:nth-child(odd) td:nth-child(odd) {
+  background: white;
+ 
+}
+#sitting-order tbody tr:nth-child(odd) td:nth-child(even), 
+#sitting-order tbody tr:nth-child(even) td:nth-child(odd) {
+  background: greenyellow;
+  
+}
+#sitting-order tbody td:nth-child(3), 
+#sitting-order tbody td:nth-child(6)  {
+    visibility: hidden;
+}
+#sitting-order tfoot {
+    visibility: hidden;
+}
+#sitting-order tfoot td:nth-child(4) {
+    visibility: visible;
+    background: #f9cccc;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+#students-list {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+#students-list th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+#students-list thead th {
+    border-top: 4px double yellowgreen;
+    border-bottom: 4px double yellowgreen;
+}
+
+#students-list tbody tr {
+    border-bottom: 1px solid yellowgreen;
+}
+
+#students-list tbody tr:last-child {
+    border-bottom: 4px double yellowgreen;
+}
+
+#students-list tbody tr:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.news {
+    width: 600px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(white, black);
+}
+
+.news .title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #159;
+}
+
+.news .description {
+    color: white;
+}
+
+.time {
+    margin: 0;
+    color: #aaa;
+    text-align: right;
+}
+
+.advertising {
+    width: 400px;
+    margin: 20px;
+    
+}
+
+.advertising .title {
+    font-size: 12px;
+    color: black;
+}
+
+.advertising .description {
+    color: red;
+    font-size: 11px;
+}
